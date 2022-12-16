@@ -5,7 +5,7 @@ The issue we looked to solve was a wine store that wanted to make sure they did 
 This was completed by creating a membership system that adjusted the stock of the wines in the store so the overall loss from turning away customers
 was not very high, while at the same time maintaining the same or better revenue.
 
-Here is the video explaining our project: 
+Here is the video explaining our project: https://www.youtube.com/watch?v=XIfpccDy-M4
 
 #Business Understanding
 This tutorial will be focusing on the data science process behind a wine business. 
@@ -27,6 +27,22 @@ However, entrepreneurs who want to grow and expand find it difficult to operate 
 Profit margins on alcohol can be extremely thin due to wine being heavily regulated.
 
 #Data Understanding
+In order to further understand the data being used, we must first break down the dataset to see if it is complete and fit for modeling. 
+The dataset being used is the Wine Quality Data Set, gathered from the UCI Machine learning repository, regarding two sets of wine. 
+The wine in question is two red and white vinho Verde wine samples from the north of Portugal. 
+Some of the characteristics that are included in the dataset are as follows.
+The characteristics include fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, 
+sulfates, alcohol, and quality which is given a score ranging between 0 and 10. 
+Although some of these factors are irrelevant in regard to our own model, they do provide some characteristics and variations for the top wines that will 
+be discounted later on within the model. 
+Something to consider when analyzing and understanding the data that is being provided is to ensure that the data being used is complete and usable. 
+Both datasets were in a CSV file format, otherwise known as a comma-separated value format. 
+Each of the factors listed above was chronologically filled and assigned a score per wine. 
+The red wine dataset was comprised of 1600 entries respectively and the white wine dataset was comprised of 4899 entries respectively. 
+This discrepancy is most likely due to the fact that Vinho Verde is predominantly known for white wine production. 
+The term Vinho Verde translates to “young wine”, where the wines are produced 3-6 months after the grapes are harvested. 
+In terms of ensuring that the dataset was usable, the entries were free of error apart from a few repeat numbers on the white wine dataset under the 
+alcohol factor that was listed.  
 
 
 #Data Preperation
